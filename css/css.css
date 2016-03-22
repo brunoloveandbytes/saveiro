@@ -1,0 +1,192 @@
+body{
+	margin:0;
+}
+
+.header{
+	position:absolute;
+	left:0px;
+	width:100%;
+	background-color: #fff;
+	min-height: 100px;
+	z-index:100;
+}
+
+.contentHeader{
+	max-width:1280px;
+	margin:auto;
+	min-height: 100px;
+}
+
+.vwLogo{
+	position: relative;
+	float:left;
+	left:18px;
+	top:18px;
+	background-image: url('../img/tiles.png');
+	background-position: 0px 0px;
+	width: 64px;
+	height: 64px;
+}
+
+.vwCarName{
+	position:relative;
+	float:right;
+	top:39px;
+	right:20px;
+}
+.vwCarName p{
+	margin: 0;
+	font-size: 18px;
+}
+.content{
+	position: fixed;
+    width: 100%;    
+    top: 100px;
+    bottom: 0;
+}
+.frame{
+	min-height: 100%;
+	min-width: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+}
+.frame > img{
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, 0);
+	min-height: 100%;
+	min-width: 100%;
+}
+#frame3{
+	background-color: #000;
+}
+.rotational{
+	position: absolute;
+	top:40%;
+	width: 100%;
+	height: 200%;
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 50%;
+}
+.rotational div{
+	position: absolute;
+	background-color: #000;
+	width: 100%;
+	height: 50%;
+	text-align: center;
+}
+.black_car{
+	background:url("../img/black_car.jpg") center center no-repeat;
+	background-size: 200%;
+}
+.blue_car{
+	background:url("../img/blue_car.jpg") center center no-repeat;
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    background-size: 75%;
+}
+
+#home{
+	background: url("../img/home.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.menu{
+	position: absolute;
+	width: 97.5vw;
+	height: 9vw;
+	left:1.75vw;
+	bottom: 10%;
+	display: none;
+}
+@media (min-width: 1024px) {
+  .menu{
+	position: absolute;
+	width: 86.666vw;
+	height: 8vw;
+	left:6.666vw;
+	bottom: 10%;
+	display: none;
+	}
+}
+
+@media (min-width: 1500px) {
+  .menu{
+	position: absolute;
+	width: 65vw;
+	height: 6vw;
+	left:17.5vw;
+	bottom: 10%;
+	display: none;
+	}
+}
+
+
+.menu div{
+	cursor:pointer;
+}
+.menu .dna{
+	position: absolute;
+	background-image: url('../img/menu.png');
+	background-size: 400% 100%;
+	width:25%;
+	height: 100%;
+}
+.menu .dna:hover{
+	background-image: url('../img/menu_hover.png');
+}
+.menu .fatos{
+	position: absolute;
+	background-image: url('../img/menu.png');
+	background-size: 666.66% 100%;
+	background-position: 28%;
+	width:15%;
+	height: 100%;
+	left:24%;
+}
+.menu .fatos:hover{
+	background-image: url('../img/menu_hover.png');
+}
+.menu .versoes{
+	position: absolute;
+	background-image: url('../img/menu.png');
+	background-size: 666.66% 100%;
+	background-position: 47%;
+	width:15%;
+	height: 100%;
+	left:39%;
+}
+.menu .versoes:hover{
+	background-image: url('../img/menu_hover.png');
+}
+.menu .m360{
+	position: absolute;
+	background-image: url('../img/menu.png');
+	background-size: 500% 100%;
+	background-position: 70%;
+	width:20%;
+	height: 100%;
+	left:54%;
+}
+.menu .m360:hover{
+	background-image: url('../img/menu_hover.png');
+}
+.menu .interesse{
+	position: absolute;
+	background-image: url('../img/menu.png');
+	background-size: 400% 100%;
+	background-position: 100%;
+	width:25%;
+	height: 100%;
+	right:0%;
+}
